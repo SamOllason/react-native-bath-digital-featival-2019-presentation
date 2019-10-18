@@ -36,6 +36,7 @@ const images = {
     InterfaceBuilderStyling1: require('../assets/InterfaceBuilderStyling1.png'),
     InterfaceBuilderStyling2: require('../assets/InterfaceBuilderStyling2.png'),
     FlexBoxStyling: require('../assets/FlexboxStyling.png'),
+    RNLogo: require('../assets/react-native-logo.png'),
 };
 
 // Require CSS
@@ -66,12 +67,21 @@ export default class Presentation extends React.Component {
                     <Heading size={1} fit caps lineHeight={1} textColor="secondary">
                         Sam Ollason
                     </Heading>
-                    <Text margin="10px 0 0" textColor="tertiary" fit bold>
-                        Technical Lead at Green13 Solutions
-                    </Text>
-                    <Text margin="10px 0 0" textColor="tertiary" fit bold>
+                    <br/>
+                    {/*<Text margin="10px 0 0" textColor="tertiary" fit >*/}
+                    {/*    Technical Lead at Green13 Solutions*/}
+                    {/*</Text>*/}
+                    <br/>
+
+                    <Heading size={3} fit lineHeight={1} textColor="tertiary">
                         My experiences working with React Native
-                    </Text>
+                    </Heading>
+                    <br/>
+
+                    <Heading size={4} lineHeight={1} textColor="secondary">
+                        Bath Digital Festival 2019
+                    </Heading>
+
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -134,6 +144,13 @@ export default class Presentation extends React.Component {
                     {/*</List>*/}
                 </Slide>
 
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>React Native - an overview</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
+                </Slide>
+
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary">
                         React Native
@@ -142,6 +159,8 @@ export default class Presentation extends React.Component {
                     {/*<Heading size={5} textColor="secondary">*/}
                     {/*    What is it?*/}
                     {/*</Heading>*/}
+
+                    <Image src={images.RNLogo} width={200} />
 
                     <List>
                         {/*<Appear>*/}
@@ -160,12 +179,12 @@ export default class Presentation extends React.Component {
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        React Native
-                    </Heading>
-                    <br/>
+                    {/*<Heading size={3} textColor="secondary" caps>*/}
+                    {/*    React Native*/}
+                    {/*</Heading>*/}
+                    {/*<br/>*/}
 
-                    <Heading size={6} textColor="secondary">
+                    <Heading size={3} textColor="secondary">
                         How it works - rendering elements
                     </Heading>
                     <br/>
@@ -281,7 +300,7 @@ export default class Presentation extends React.Component {
                             <ListItem>Connecting UI elements to logic</ListItem>
                         {/*</Appear>*/}
                         {/*<Appear>*/}
-                        {/*    <ListItem>Project Roadmap</ListItem>*/}
+                            <ListItem>Project Roadmap</ListItem>
                         {/*</Appear>*/}
                         {/*<Appear>*/}
                             <ListItem>Publishing</ListItem>
@@ -290,6 +309,13 @@ export default class Presentation extends React.Component {
                             <ListItem>Bugs and support</ListItem>
                         {/*</Appear>*/}
                     </List>
+                </Slide>
+
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>Language</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -354,14 +380,14 @@ export default class Presentation extends React.Component {
                 </Slide>
 
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={3} textColor="secondary" caps>
                         Language
                     </Heading>
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         Conclusion
                     </Heading>
 
@@ -473,6 +499,14 @@ export default class Presentation extends React.Component {
                 {/*    </List>*/}
                 {/*</Slide>*/}
 
+
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>Tooling and Infrastructure</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
+                </Slide>
+
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
                         Tooling
@@ -507,7 +541,7 @@ export default class Presentation extends React.Component {
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
-                        Tools and Infrastructure
+                        Tooling
                     </Heading>
 
                     <br/>
@@ -535,9 +569,9 @@ export default class Presentation extends React.Component {
                 </Slide>
 
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={3} textColor="secondary" caps>
-                        Development Tooling
+                        Tooling
                     </Heading>
 
                     <br/>
@@ -568,6 +602,13 @@ export default class Presentation extends React.Component {
                         <ListItem bulletStyle="star">React native > React for the web</ListItem>
 
                     </List>
+                </Slide>
+
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>UI Styling</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -614,7 +655,7 @@ export default class Presentation extends React.Component {
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         React Native
                     </Heading>
 
@@ -642,14 +683,14 @@ export default class Presentation extends React.Component {
 
                 <Slide transition={['fade']} bgImage={images.FlexBoxStyling}/>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={4} textColor="secondary" caps>
-                        UI Elements Styling
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
+                    <Heading size={3} textColor="secondary" caps>
+                        UI Styling
                     </Heading>
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         Conclusion
                     </Heading>
 
@@ -671,6 +712,13 @@ export default class Presentation extends React.Component {
                         {/*</Appear>*/}
                     </List>
 
+                </Slide>
+
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>UI and logic</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -738,7 +786,7 @@ export default class Presentation extends React.Component {
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         React Native
                     </Heading>
 
@@ -762,7 +810,7 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={3} textColor="secondary" caps>
                         UI and Logic
                     </Heading>
@@ -787,6 +835,12 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>Project Roadmap</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
+                </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
@@ -861,19 +915,26 @@ export default class Presentation extends React.Component {
                     <List>
                         {/*<Appear>*/}
                         <ListItem bulletStyle="star">Preferred guided nature of native iOS</ListItem>
+                        <ListItem bulletStyle="star">Less breaking changes in React than RN</ListItem>
                         {/*</Appear>*/}
                     </List>
                 </Slide>
 
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>Publishing</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
+                </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        Publishing
-                    </Heading>
+                    {/*<Heading size={3} textColor="secondary" caps>*/}
+                    {/*    Publishing*/}
+                    {/*</Heading>*/}
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary">
+                    <Heading size={4} textColor="secondary">
                         React Native: React Native CLI
                     </Heading>
 
@@ -888,13 +949,13 @@ export default class Presentation extends React.Component {
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={4} textColor="secondary" caps>
-                        Publishing
-                    </Heading>
+                    {/*<Heading size={4} textColor="secondary" caps>*/}
+                    {/*    Publishing*/}
+                    {/*</Heading>*/}
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary">
+                    <Heading size={4} textColor="secondary">
                         React Native: Expo CLI
                     </Heading>
 
@@ -928,14 +989,14 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={3} textColor="secondary" caps>
                         Publishing
                     </Heading>
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         Conclusion
                     </Heading>
 
@@ -951,6 +1012,13 @@ export default class Presentation extends React.Component {
                         <ListItem>Expo CLI > Native iOS (from what I've read)</ListItem>
                         {/*</Appear>*/}
                     </List>
+                </Slide>
+
+                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
+                    <BlockQuote>
+                        <Quote>Bugs and support</Quote>
+                        {/*<Cite margin="10px 0 0 30px">Author</Cite>*/}
+                    </BlockQuote>
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -1028,7 +1096,7 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={4} textColor="secondary" caps>
                         Bugs and Support
                     </Heading>
@@ -1053,8 +1121,8 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={4} textColor="secondary" caps>
+                <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
+                    <Heading size={3} textColor="secondary" caps>
                         Overall
                     </Heading>
 
@@ -1164,54 +1232,54 @@ export default class Presentation extends React.Component {
 
 
 
-
-                <Slide transition={['fade']} bgColor="tertiary">
-                    <Heading size={6} textColor="primary" caps>
-                        Typography
-                    </Heading>
-                    <Heading size={1} textColor="secondary">
-                        Heading 1
-                    </Heading>
-                    <Heading size={2} textColor="secondary">
-                        Heading 2
-                    </Heading>
-                    <Heading size={3} textColor="secondary">
-                        Heading 3
-                    </Heading>
-                    <Heading size={4} textColor="secondary">
-                        Heading 4
-                    </Heading>
-                    <Heading size={5} textColor="secondary">
-                        Heading 5
-                    </Heading>
-                    <Text size={6} textColor="secondary">
-                        Standard text
-                    </Text>
-                </Slide>
-
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={6} textColor="secondary" caps>
-                        Standard List
-                    </Heading>
-                    <List>
-                        <ListItem bulletStyle="star">Item 1</ListItem>
-                        <ListItem bulletStyle="cross">Item 2</ListItem>
-                        <ListItem>Item 3</ListItem>
-                        <ListItem>Item 4</ListItem>
-                    </List>
-                </Slide>
-
-                <Slide transition={['fade']} bgColor="secondary" textColor="primary">
-                    <BlockQuote>
-                        <Quote>Example Quote</Quote>
-                        <Cite margin="10px 0 0 30px">Author</Cite>
-                    </BlockQuote>
-                </Slide>
-
-                <Slide>
-                    <Image src={images.goodWork} width={500} />
-                    <Notes>gifs work too</Notes>
-                </Slide>
+                
+                {/*<Slide transition={['fade']} bgColor="tertiary">*/}
+                {/*    <Heading size={6} textColor="primary" caps>*/}
+                {/*        Typography*/}
+                {/*    </Heading>*/}
+                {/*    <Heading size={1} textColor="secondary">*/}
+                {/*        Heading 1*/}
+                {/*    </Heading>*/}
+                {/*    <Heading size={2} textColor="secondary">*/}
+                {/*        Heading 2*/}
+                {/*    </Heading>*/}
+                {/*    <Heading size={3} textColor="secondary">*/}
+                {/*        Heading 3*/}
+                {/*    </Heading>*/}
+                {/*    <Heading size={4} textColor="secondary">*/}
+                {/*        Heading 4*/}
+                {/*    </Heading>*/}
+                {/*    <Heading size={5} textColor="secondary">*/}
+                {/*        Heading 5*/}
+                {/*    </Heading>*/}
+                {/*    <Text size={6} textColor="secondary">*/}
+                {/*        Standard text*/}
+                {/*    </Text>*/}
+                {/*</Slide>*/}
+                
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={6} textColor="secondary" caps>*/}
+                {/*        Standard List*/}
+                {/*    </Heading>*/}
+                {/*    <List>*/}
+                {/*        <ListItem bulletStyle="star">Item 1</ListItem>*/}
+                {/*        <ListItem bulletStyle="cross">Item 2</ListItem>*/}
+                {/*        <ListItem>Item 3</ListItem>*/}
+                {/*        <ListItem>Item 4</ListItem>*/}
+                {/*    </List>*/}
+                {/*</Slide>*/}
+                
+                {/*<Slide transition={['fade']} bgColor="secondary" textColor="primary">*/}
+                {/*    <BlockQuote>*/}
+                {/*        <Quote>Example Quote</Quote>*/}
+                {/*        <Cite margin="10px 0 0 30px">Author</Cite>*/}
+                {/*    </BlockQuote>*/}
+                {/*</Slide>*/}
+                
+                {/*<Slide>*/}
+                {/*    <Image src={images.goodWork} width={500} />*/}
+                {/*    <Notes>gifs work too</Notes>*/}
+                {/*</Slide>*/}
 
             </Deck>
         );
