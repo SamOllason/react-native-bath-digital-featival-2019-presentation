@@ -31,7 +31,11 @@ const images = {
     goodWork: require('../assets/good-work.gif'),
     bridge: require('../assets/bridge.png'),
     XcodeSShot: require('../assets/XcodeSShot.png'),
-    WebStormSShot: require('../assets/WebStormSShot.png')
+    WebStormSShot: require('../assets/WebStormSShot.png'),
+    pino: require('../assets/pino.jpg'),
+    InterfaceBuilderStyling1: require('../assets/InterfaceBuilderStyling1.png'),
+    InterfaceBuilderStyling2: require('../assets/InterfaceBuilderStyling2.png'),
+    FlexBoxStyling: require('../assets/FlexboxStyling.png'),
 };
 
 // Require CSS
@@ -76,11 +80,13 @@ export default class Presentation extends React.Component {
                     </Heading>
 
                     <List>
-                        <ListItem>Software Developer at Green13 Solutions</ListItem>
+                        <ListItem>Technical Lead at Green13 Solutions</ListItem>
                         <br/>
                         <ListItem>Manage development of user interfaces</ListItem>
                         <br/>
                         <ListItem>Research and development</ListItem>
+                        <br/>
+                        <ListItem>React, native iOS</ListItem>
 
                         {/*<ListItem bulletStyle="star">Item 1</ListItem>*/}
                         {/*<ListItem bulletStyle="cross">Item 2</ListItem>*/}
@@ -138,18 +144,18 @@ export default class Presentation extends React.Component {
                     {/*</Heading>*/}
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                             <ListItem>React: JavaScript library for building UIs</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                             <ListItem>React Native: JavaScript library for building cross-platform mobile apps</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                             <ListItem>Write once, run anywhere (almost)</ListItem>
-                        </Appear>
-                        <Image src={images.goodWork} width={500} />
+                        {/*</Appear>*/}
+
                     </List>
                 </Slide>
 
@@ -166,14 +172,15 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
-                            <ListItem>Same approach as React: UI components</ListItem>
-                        </Appear>
-                        <br/>
-                        <div>image example</div>
-                        <Appear>
-                            <ListItem bulletStyle="star"><b>Takeaway:</b> Same code (almost) as React for web projects</ListItem>
-                        </Appear>
+                        <div>Diagram of how both React and RN use IR</div>
+                        {/*<Appear>*/}
+                        {/*<ListItem>Same approach as React: UI components</ListItem>*/}
+                        {/*/!*</Appear>*!/*/}
+                        {/*<br/>*/}
+                        {/*/!*<Image src={images.pino} width={500} />*!/*/}
+                        {/*/!*<Appear>*!/*/}
+                        {/*<ListItem bulletStyle="star"><b>Takeaway:</b> Same code (almost) as React for web projects</ListItem>*/}
+                        {/*/!*</Appear>*!/*/}
                     </List>
                 </Slide>
 
@@ -182,25 +189,72 @@ export default class Presentation extends React.Component {
                         React Native
                     </Heading>
                     <br/>
+
                     <Heading size={6} textColor="secondary">
-                        Communication
+                        How it works - rendering elements
+                    </Heading>
+                    <br/>
+                    <br/>
+
+                    <List>
+                        {/*<Appear>*/}
+                            <ListItem>Same approach as React: UI components</ListItem>
+                        {/*</Appear>*/}
+                        <br/>
+                        {/*<Image src={images.pino} width={500} />*/}
+                        {/*<Appear>*/}
+                            <ListItem bulletStyle="star"><b>Takeaway:</b> Same code (almost) as React for web projects</ListItem>
+                        {/*</Appear>*/}
+                    </List>
+                </Slide>
+
+                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+                    <Heading size={3} textColor="secondary" caps>
+                        React Native
+                    </Heading>
+                    <br/>
+
+                    <Heading size={6} textColor="secondary">
+                        A real native app
                     </Heading>
                     <br/>
 
                     <List>
-                        <Appear>
-                            <ListItem>Messages are sent across bridge</ListItem>
-                        </Appear>
+                        {/*<Appear>*/}
+                        <ListItem>Generates actual native UI modules</ListItem>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
-                            <Image src={images.bridge} width={800} />
-                        </Appear>
-                        <br/>
-                        <Appear>
-                            <ListItem bulletStyle="star"><b>Takeaway:</b> (generally) only deal with React/JS code ... no native code!</ListItem>
-                        </Appear>
+                        {/*<Appear>*/}
+                        <ListItem bulletStyle="star"><b>Takeaway:</b> User doesn't know its not a hybrid app!</ListItem>
+                        {/*</Appear>*/}
                     </List>
+                    <Image src={images.pino} width={400} />
                 </Slide>
+
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={3} textColor="secondary" caps>*/}
+                {/*        React Native*/}
+                {/*    </Heading>*/}
+                {/*    <br/>*/}
+                {/*    <Heading size={6} textColor="secondary">*/}
+                {/*        Communication*/}
+                {/*    </Heading>*/}
+                {/*    <br/>*/}
+
+                {/*    <List>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*            <ListItem>Messages are sent across bridge</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*            <Image src={images.bridge} width={800} />*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*            <ListItem bulletStyle="star"><b>Takeaway:</b> (generally) only deal with React/JS code ... no native code!</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*    </List>*/}
+                {/*</Slide>*/}
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
@@ -210,31 +264,31 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                             <ListItem>Language</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
 
-                        <Appear>
-                            <ListItem>Development Environment</ListItem>
-                        </Appear>
-                        <Appear>
+                        {/*<Appear>*/}
+                        {/*    <ListItem>Development Environment</ListItem>*/}
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                             <ListItem>Development Tooling</ListItem>
-                        </Appear>
-                        <Appear>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                             <ListItem>UI Styling</ListItem>
-                        </Appear>
-                        <Appear>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                             <ListItem>Connecting UI elements to logic</ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>Project Roadmap</ListItem>
-                        </Appear>
-                        <Appear>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
+                        {/*    <ListItem>Project Roadmap</ListItem>*/}
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                             <ListItem>Publishing</ListItem>
-                        </Appear>
-                        <Appear>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                             <ListItem>Bugs and support</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -253,17 +307,17 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Writing in React ... for native apps</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>'Almost' identical, so shallow learning curve</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Some React Native pre-made components easier to work with than React</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
 
 
@@ -284,17 +338,17 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Swift (or Objective-C...)</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Type checking, type inference</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Easy to learn to start with, but then some challenges</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <div>Optionals image?</div>
                     </List>
                 </Slide>
@@ -315,33 +369,118 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Swift > React Native (JavaScript)</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
 
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Swift > React for web (JavaScript)</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>React Native > React for web</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem bulletStyle="star"><b>Swift has a best developer experience</b></ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={4} textColor="secondary" caps>*/}
+                {/*        Development Ecosystem*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+
+                {/*    <Heading size={6} textColor="secondary" caps>*/}
+                {/*        Native iOS*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+                {/*    <br/>*/}
+
+                {/*    <List>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*        <ListItem>Xcode</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*        <ListItem>Powerful and sophisticated</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+
+                {/*        /!*<Appear>*!/*/}
+                {/*        <ListItem>...but too dense and cluttered</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*    </List>*/}
+                {/*</Slide>*/}
+
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={3} textColor="secondary" caps>*/}
+                {/*        Dev Environment*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+
+                {/*    <Heading size={6} textColor="secondary">*/}
+                {/*        React Native*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+                {/*    <br/>*/}
+                {/*    <br/>*/}
+                {/*    <br/>*/}
+
+                {/*    <List>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*        <ListItem>Using WebStorm, same as React</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*        <ListItem>Feels 'lighter' and less cluttered</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*    </List>*/}
+                {/*</Slide>*/}
+
+                {/*<Slide transition={['fade']} bgImage={images.WebStormSShot}/>*/}
+                {/*<Slide transition={['fade']} bgImage={images.XcodeSShot}/>*/}
+
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={3} textColor="secondary" caps>*/}
+                {/*        Dev Environment*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+
+                {/*    <Heading size={6} textColor="secondary">*/}
+                {/*        Summary*/}
+                {/*    </Heading>*/}
+
+                {/*    <br/>*/}
+                {/*    <br/>*/}
+
+                {/*    <List>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*            <ListItem bulletStyle="star">React Native === React</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*        <br/>*/}
+                {/*        /!*<Appear>*!/*/}
+                {/*            <ListItem bulletStyle="star">React Native > Native iOS</ListItem>*/}
+                {/*        /!*</Appear>*!/*/}
+                {/*    </List>*/}
+                {/*</Slide>*/}
+
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={4} textColor="secondary" caps>
-                        Development Ecosystem
+                    <Heading size={3} textColor="secondary" caps>
+                        Tooling
                     </Heading>
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         Native iOS
                     </Heading>
 
@@ -349,114 +488,31 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
-                        <ListItem>Xcode</ListItem>
-                        </Appear>
-                        <br/>
-                        <Appear>
-                        <ListItem>Powerful and sophisticated</ListItem>
-                        </Appear>
-                        <br/>
-
-                        <Appear>
-                        <ListItem>...but too dense and cluttered</ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        Dev Environment
-                    </Heading>
-
-                    <br/>
-
-                    <Heading size={6} textColor="secondary">
-                        React Native
-                    </Heading>
-
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
-                    <List>
-                        <Appear>
-                        <ListItem>Using WebStorm, same as React</ListItem>
-                        </Appear>
-                        <br/>
-                        <Appear>
-                        <ListItem>Feels 'lighter' and less cluttered</ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-
-                <Slide transition={['fade']} bgImage={images.WebStormSShot}/>
-                <Slide transition={['fade']} bgImage={images.XcodeSShot}/>
-
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        Dev Environment
-                    </Heading>
-
-                    <br/>
-
-                    <Heading size={6} textColor="secondary">
-                        Summary
-                    </Heading>
-
-                    <br/>
-                    <br/>
-
-                    <List>
-                        <Appear>
-                            <ListItem bulletStyle="star">React Native === React</ListItem>
-                        </Appear>
-                        <br/>
-                        <Appear>
-                            <ListItem bulletStyle="star">React Native > Native iOS</ListItem>
-                        </Appear>
-                    </List>
-                </Slide>
-
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        Dev Tooling
-                    </Heading>
-
-                    <br/>
-
-                    <Heading size={6} textColor="secondary">
-                        Native iOS
-                    </Heading>
-
-                    <br/>
-                    <br/>
-
-                    <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>IDE: Xcode, Emulators: Xcode</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Swift for iOS apps compiled</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Slow and frustrating for quick iterations</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
+                <Slide transition={['fade']} bgImage={images.XcodeSShot}/>
+                <Slide transition={['fade']} bgImage={images.WebStormSShot}/>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
-                        Dev Tooling
+                        Tools and Infrastructure
                     </Heading>
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
+                    <Heading size={6} textColor="secondary">
                         React Native
                     </Heading>
 
@@ -464,19 +520,20 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>IDE: WebStorm, Emulators: Xcode</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Hot reloading</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Slow and frustrating for quick iterations</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
+
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
@@ -485,24 +542,31 @@ export default class Presentation extends React.Component {
 
                     <br/>
 
-                    <Heading size={6} textColor="secondary" caps>
-                        Summary
+                    <Heading size={6} textColor="secondary">
+                        Conclusion
                     </Heading>
 
                     <br/>
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Same emulator experience</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
+                        <br/>
 
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>
                             Hot reloading beats compilation it
                         </ListItem>
-                        </Appear>
-                        <div>Demo?</div>
+                        <br/>
+
+                        {/*</Appear>*/}
+                        <ListItem bulletStyle="star">React native > Native IOS</ListItem>
+                        <br/>
+
+                        <ListItem bulletStyle="star">React native > React for the web</ListItem>
+
                     </List>
                 </Slide>
 
@@ -521,23 +585,26 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Xcode Interface Builder</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Initially enjoyed the fine-grained control</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>In the end found cluttered and frustrating</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
+                {/*<Slide transition={['fade']} bgImage={images.InterfaceBuilderStyling1}/>*/}
+                <Slide transition={['fade']} bgImage={images.InterfaceBuilderStyling2}/>
+
                 <Slide>
-                    <Image src={images.goodWork} width={500} />
-                    <Notes>Image of Xcode Interface Builder, from UIscroolview article</Notes>
+                    <Image src={images.InterfaceBuilderStyling1} width={500} />
+                    <Notes>Screenshot of Xcode Interface Builder controlling layout</Notes>
                 </Slide>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -555,23 +622,25 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Programmatically style w/ FlexBox + CSS</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Very similar to React</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Handles resizing automatically</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>React Native 'modals' vs React 'Portals'</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
+
+                <Slide transition={['fade']} bgImage={images.FlexBoxStyling}/>
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={4} textColor="secondary" caps>
@@ -588,18 +657,18 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>React Native > React for the web</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>React Native > Native iOS</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
 
                         <ListItem bulletStyle="star">React native the easiest</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
 
                 </Slide>
@@ -619,43 +688,48 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>MVC paradigm</ListItem>
-                        </Appear>
-                        <Appear>
-                        <ListItem>View: canvas area</ListItem>
-                        </Appear>
-                        <Appear>
+                        <br/>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
+                        <ListItem>View: storyboard area</ListItem>
+                        <br/>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                         <ListItem>Controller: Swift source file</ListItem>
-                        </Appear>
+                        <br/>
+                        {/*</Appear>*/}
 
                         {/*image????*/}
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Make sure appropriate files open/closed</ListItem>
-                        </Appear>
-                        <Appear>
+                        <br/>
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
                         <ListItem>Make sure 'connections' deleted properly</ListItem>
-                        </Appear>
+                        <br/>
+                        {/*</Appear>*/}
 
                     </List>
                 </Slide>
 
-                <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
-                    <Heading size={3} textColor="secondary" caps>
-                        UI and Logic
-                    </Heading>
+                {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
+                {/*    <Heading size={3} textColor="secondary" caps>*/}
+                {/*        UI and Logic*/}
+                {/*    </Heading>*/}
 
-                    <br/>
+                {/*    <br/>*/}
 
-                    <Heading size={6} textColor="secondary">
-                        Native iOS
-                    </Heading>
+                {/*    <Heading size={6} textColor="secondary">*/}
+                {/*        Native iOS*/}
+                {/*    </Heading>*/}
 
-                    <br/>
-                    <br/>
+                {/*    <br/>*/}
+                {/*    <br/>*/}
 
-                    <div>Example of drag and drop</div>
-                </Slide>
+                {/*    <div>Example of drag and drop</div>*/}
+                {/*</Slide>*/}
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={3} textColor="secondary" caps>
@@ -672,15 +746,19 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Markup and logic all in one file</ListItem>
-                        </Appear>
-                        <Appear>
-                        <ListItem>Markup using through JSX</ListItem>
-                        </Appear>
-                        <Appear>
-                            <ListItem>JSX: "combining markup and JavaScript"</ListItem>
-                            </Appear>
+                        <br/>
+
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
+                        <ListItem>Markup with JSX</ListItem>
+                        <br/>
+
+                        {/*</Appear>*/}
+                        {/*<Appear>*/}
+                        <ListItem>JSX: <i>"combining markup and JavaScript"</i></ListItem>
+                            {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -699,13 +777,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem bulletStyle="star">React Native > native iOS</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem bulletStyle="star">React Native === React for the web</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -725,17 +803,17 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Two choices: Expo CLI vs 'React Native CLI'</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Not always clear at which to pick</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Lots of community approaches to projects</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -754,17 +832,15 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Clearly linear learning path</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem><i>The</i> Apple way of doing things</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
-                        <ListItem>Lots of community approaches to projects</ListItem>
-                        </Appear>
+
                     </List>
                 </Slide>
 
@@ -783,9 +859,9 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem bulletStyle="star">Preferred guided nature of native iOS</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -805,9 +881,9 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Open Xcode project - then its the same as a native release</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -830,13 +906,13 @@ export default class Presentation extends React.Component {
                     </Heading>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Bundle, upload with Apple desktop tool</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>App agnostic at and beyond this point</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
 
                     </List>
 
@@ -867,13 +943,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>React Native CLI === Native iOS</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Expo CLI > Native iOS (from what I've read)</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -892,13 +968,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Lots of moving parts</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Breaking changes between versions</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -917,13 +993,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Easier than React Native to find solutions as bigger community</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Still lots of moving parts</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -942,13 +1018,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Easy to find solution</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem>Often clear if it was best practice or or not</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -967,13 +1043,13 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <Appear>
-                        <ListItem bulletStyle="star">Native iOS > React for the web > React Native</ListItem>
-                        </Appear>
+                        {/*<Appear>*/}
+                        <ListItem bulletStyle="star">Native iOS > React for the web</ListItem>
+                        {/*</Appear>*/}
                         <br/>
-                        <Appear>
+                        {/*<Appear>*/}
                         <ListItem bulletStyle="star">React for the web > React Native</ListItem>
-                        </Appear>
+                        {/*</Appear>*/}
                     </List>
                 </Slide>
 
@@ -994,59 +1070,52 @@ export default class Presentation extends React.Component {
                         {/*    </TableRow>*/}
                         {/*</TableHeader>*/}
                         <TableBody>
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>Language:</TableItem>
                                 <TableItem>Native iOS (Swift)</TableItem>
                             </TableRow>
-                            </Appear>
-                            <br/>
-                            <Appear>
-                            <TableRow>
-                                <TableItem>Development environment:</TableItem>
-                                <TableItem>React Native</TableItem>
-                            </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                             <br/>
 
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>Tooling:</TableItem>
                                 <TableItem>React Native</TableItem>
                             </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                             <br/>
 
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>UI Styling + Logic:</TableItem>
                                 <TableItem>React Native</TableItem>
                             </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                             <br/>
 
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>Project Roadmap:</TableItem>
                                 <TableItem>React Native</TableItem>
                             </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                             <br/>
 
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>Publishing:</TableItem>
                                 <TableItem>React Native</TableItem>
                             </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                             <br/>
 
-                            <Appear>
+                            {/*<Appear>*/}
                             <TableRow>
                                 <TableItem>Support:</TableItem>
                                 <TableItem>Native iOS</TableItem>
                             </TableRow>
-                            </Appear>
+                            {/*</Appear>*/}
                         </TableBody>
                     </Table>
 
@@ -1086,14 +1155,12 @@ export default class Presentation extends React.Component {
                     <br/>
 
                     <List>
-                        <ListItem>Medium link</ListItem>
-                        <ListItem>G13 link</ListItem>
-                        <ListItem>SamOllason github</ListItem>
-                        <ListItem>Created with Spectacle ... React!!!</ListItem>
+                        <ListItem><a href="https://medium.com/@sam_ollason/react-native-vs-swift-ios-c144496f1519" target="_blank">Article</a> on Medium</ListItem>
+                        <ListItem><a href="https://github.com/SamOllason" target="_blank">Github</a></ListItem>
+                        <ListItem>Created with <a href="https://github.com/FormidableLabs/spectacle/blob/master/README.md" target="_blank">Spectacle</a> ... using React!!!</ListItem>
                         <ListItem>Slides online</ListItem>
                     </List>
                 </Slide>
-
 
 
 
