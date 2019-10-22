@@ -1,8 +1,8 @@
 {
   "name": "spectacle-boilerplate",
   "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
-  "main": "lib/index.js",
+  "description": "Slides for Bath Digital Festival 2019 Talk",
+  "main": "presentation/index.js",
   "scripts": {
     "build": "npm run clean & cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "clean": "rimraf dist",
@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.jsx .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "Formidable Labs <hello@formidable.com> (https://formidable.com)",
+  "author": "Sam Ollason / Formidable Labs <hello@formidable.com> (https://formidable.com)",
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
