@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Slides for Bath Digital Festival 2019 Talk",
   "main": "presentation/index.js",
+  "homepage": "https://samollason.github.io/react-native-bath-digital-featival-2019-presentation",
   "scripts": {
     "build": "npm run clean & cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "clean": "rimraf dist",
