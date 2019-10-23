@@ -29,6 +29,7 @@ import createTheme from 'spectacle/lib/themes/default';
 const images = {
     formidagon: require('../assets/formidable-logo.svg'),
     goodWork: require('../assets/good-work.gif'),
+    firstSlide: require('../assets/firstSlide.png'),
     bridge: require('../assets/bridge.png'),
     XcodeSShot: require('../assets/XcodeSShot.png'),
     WebStormSShot: require('../assets/WebStormSShot.png'),
@@ -37,6 +38,8 @@ const images = {
     InterfaceBuilderStyling2: require('../assets/InterfaceBuilderStyling2.png'),
     FlexBoxStyling: require('../assets/FlexboxStyling.png'),
     RNLogo: require('../assets/react-native-logo.png'),
+    sponsor1: require('../assets/sponsor1.png'),
+    sponsor2: require('../assets/sponsor2.png'),
 };
 
 // Require CSS
@@ -63,26 +66,58 @@ export default class Presentation extends React.Component {
                 transitionDuration={500}
                 theme={theme}
             >
-                <Slide transition={['fade']} bgColor="primary">
-                    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-                        Sam Ollason
-                    </Heading>
-                    <br/>
-                    {/*<Text margin="10px 0 0" textColor="tertiary" fit >*/}
-                    {/*    Technical Lead at Green13 Solutions*/}
-                    {/*</Text>*/}
-                    <br/>
 
-                    <Heading size={3} fit lineHeight={1} textColor="tertiary">
-                        My experiences working with React Native
-                    </Heading>
+                <Slide
+                    transition={['slide']}
+                    bgImage={images.firstSlide}
+                    // bgDarken={0.75}
+                >
+                    {/*<Appear fid="1">*/}
+                        <Heading size={1} caps textColor="primary">
+                            Sam Ollason
+                        </Heading>
+                    <br/>
                     <br/>
 
-                    <Heading size={4} lineHeight={1} textColor="secondary">
-                        Bath Digital Festival 2019
-                    </Heading>
+                    {/*</Appear>*/}
+                    {/*<Appear fid="2">*/}
+                        <Heading size={5} textColor="primary">
+                           Green13 Solutions
+                        </Heading>
+                    <br/>
 
+                    {/*</Appear>*/}
+                    {/*<Appear fid="3">*/}
+                        <Heading size={5} textColor="secondary">
+                            My experiences with React Native
+                        </Heading>
+                    <br/>
+                    <br/>
+
+                    {/*</Appear>*/}
                 </Slide>
+
+
+                {/*<Slide transition={['fade']} bgColor="primary">*/}
+                {/*    <Heading size={1} fit caps lineHeight={1} textColor="secondary">*/}
+                {/*        Sam Ollason*/}
+                {/*    </Heading>*/}
+                {/*    <br/>*/}
+                {/*    /!*<Text margin="10px 0 0" textColor="tertiary" fit >*!/*/}
+                {/*    /!*    Technical Lead at Green13 Solutions*!/*/}
+                {/*    /!*</Text>*!/*/}
+                {/*    <br/>*/}
+                
+                {/*    <Heading size={3} fit lineHeight={1} textColor="tertiary">*/}
+                {/*        My experiences working with React Native*/}
+                {/*    </Heading>*/}
+                {/*    <br/>*/}
+                
+                {/*    <Heading size={4} lineHeight={1} textColor="secondary">*/}
+                {/*        Bath Digital Festival 2019*/}
+                {/*    </Heading>*/}
+                
+                {/*</Slide>*/}
 
                 <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
                     <Heading size={1} textColor="secondary">
@@ -114,7 +149,7 @@ export default class Presentation extends React.Component {
                     <br/>
                     <br/>
 
-                    <Heading size={5} textColor="secondary" caps>
+                    <Heading size={5} textColor="secondary">
                         Refresher on React Native:
                     </Heading>
                     <Text margin="10px 0 0" textColor="tertiary">
@@ -129,7 +164,7 @@ export default class Presentation extends React.Component {
                     <br/>
                     <br/>
 
-                    <Heading size={5} textColor="secondary" caps>
+                    <Heading size={5} textColor="secondary">
                         My Experiences:
                     </Heading>
 
@@ -283,7 +318,7 @@ export default class Presentation extends React.Component {
                         {/*    <ListItem>Development Environment</ListItem>*/}
                         {/*</Appear>*/}
                         {/*<Appear>*/}
-                            <ListItem>Development Tooling</ListItem>
+                            <ListItem>Tooling and Infrastructure</ListItem>
                         {/*</Appear>*/}
                         {/*<Appear>*/}
                             <ListItem>UI Styling</ListItem>
@@ -1141,7 +1176,7 @@ export default class Presentation extends React.Component {
 
                             {/*<Appear>*/}
                             <TableRow>
-                                <TableItem>Tooling:</TableItem>
+                                <TableItem>Tooling and Infrastructure:</TableItem>
                                 <TableItem>React Native</TableItem>
                             </TableRow>
                             {/*</Appear>*/}
@@ -1232,9 +1267,10 @@ export default class Presentation extends React.Component {
                     </List>
                 </Slide>
 
+                <Slide transition={['fade']} bgImage={images.sponsor1}/>
+                <Slide transition={['fade']} bgImage={images.sponsor1}/>
 
 
-                
                 {/*<Slide transition={['fade']} bgColor="tertiary">*/}
                 {/*    <Heading size={6} textColor="primary" caps>*/}
                 {/*        Typography*/}
