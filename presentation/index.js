@@ -29,7 +29,6 @@ import createTheme from 'spectacle/lib/themes/default';
 const images = {
     formidagon: require('../assets/formidable-logo.svg'),
     goodWork: require('../assets/good-work.gif'),
-    firstSlide: require('../assets/firstSlide.png'),
     bridge: require('../assets/bridge.png'),
     XcodeSShot: require('../assets/XcodeSShot.png'),
     WebStormSShot: require('../assets/WebStormSShot.png'),
@@ -40,6 +39,10 @@ const images = {
     RNLogo: require('../assets/react-native-logo.png'),
     sponsor1: require('../assets/sponsor1.png'),
     sponsor2: require('../assets/sponsor2.png'),
+    jsxExample: require('../assets/jsxExample.png'),
+
+
+    firstSlide: require('../assets/firstSlide.png'),
 };
 
 // Require CSS
@@ -619,7 +622,8 @@ export default class Presentation extends React.Component {
                         <br/>
 
                         {/*</Appear>*/}
-                        <ListItem bulletStyle="star">React native > Native IOS</ListItem>
+                        <ListItem bulletStyle="star">React native > Native iOS</ListItem>
+                        <ListItem bulletStyle="star">React native > Native iROS</ListItem>
                         <br/>
 
                         <ListItem bulletStyle="star">React native same as React for the web</ListItem>
@@ -789,7 +793,6 @@ export default class Presentation extends React.Component {
 
                 <Slide transition={['fade']} bgImage={images.XcodeSShot}/>
 
-
                 {/*<Slide transition={['fade']} bgColor="primary" textColor="tertiary">*/}
                 {/*    <Heading size={3} textColor="secondary" caps>*/}
                 {/*        UI and Logic*/}
@@ -837,6 +840,9 @@ export default class Presentation extends React.Component {
                             {/*</Appear>*/}
                     </List>
                 </Slide>
+
+                <Slide transition={['fade']} bgImage={images.jsxExample}/>
+
 
                 <Slide transition={['fade']} bgColor="tertiary" textColor="primary">
                     <Heading size={3} textColor="secondary" caps>
@@ -1268,7 +1274,7 @@ export default class Presentation extends React.Component {
                 </Slide>
 
                 <Slide transition={['fade']} bgImage={images.sponsor1}/>
-                <Slide transition={['fade']} bgImage={images.sponsor1}/>
+                <Slide transition={['fade']} bgImage={images.sponsor2}/>
 
 
                 {/*<Slide transition={['fade']} bgColor="tertiary">*/}
